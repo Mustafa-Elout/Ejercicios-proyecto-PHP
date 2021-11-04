@@ -1,5 +1,5 @@
 <h4><br> REALICE SU COMPRA  <?= $_SESSION['nombre']?></h14><br>
-     <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
+     <form action="fruteriaMusta.php" method="post">
      <b>Selecciona la fruta: <select name="fruta">
 			<option value="Platanos">Platanos</option>
 			<option value="Naranjas">Naranjas</option>
