@@ -47,7 +47,7 @@ class AccesoDatos {
 
 
     // SELECT Devuelvo la lista de Productos
-    public function getProducto ():array {
+    public function getProductos ():array {
         $tpro = [];
         // Crea la sentencia preparada
         $stmt_productos  = $this->dbh->prepare("select * from PRODUCTOS");
@@ -69,7 +69,7 @@ class AccesoDatos {
     }
     
     // SELECT Devuelvo un usuario o false
-    public function getUsuario(String $npro) {
+    public function getProducto(String $npro) {
         $pro = false;
         
         $stmt_productos   = $this->dbh->prepare("select * from PRODUCTOS where PRODUCTO_NO =?");

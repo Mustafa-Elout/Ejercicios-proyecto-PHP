@@ -17,7 +17,7 @@ function mostrarDatos (){
     $msg .= "</tr>";
     $auto = $_SERVER['PHP_SELF'];
     $db = AccesoDatos::getModelo();
-    $tpro = $db->getProducto();
+    $tpro = $db->getProductos();
     foreach ($tpro as $pro) {
         $msg .= "<tr>";
         $msg .= "<td>$pro->PRODUCTO_NO</td>";
