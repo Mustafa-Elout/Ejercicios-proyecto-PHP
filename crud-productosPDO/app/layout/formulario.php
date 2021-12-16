@@ -14,15 +14,13 @@
 <hr>
 <form   method="POST">
 <table>
-
- <tr><td>Nº Productos </td> 
+<tr><td>NOMBRE   </td> <td>
+ <input type="text" 	name="DESCRIPCION" 	    value="<?=$pro->DESCRIPCION ?>"      <?= ($orden == "Detalles")?"readonly":"" ?> size="20"></td></tr>
+ <tr><td>ID </td> 
  <td>
  <input type="text" 	name="PRODUCTO_NO" 	    value="<?=$pro->PRODUCTO_NO ?>"      <?= ($orden == "Detalles" || $orden == "Modificar")?"readonly":"" ?> size="20" autofocus></td></tr>
- <tr><td>Descripción   </td> <td>
- <input type="text" 	name="DESCRIPCION" 	    value="<?=$pro->DESCRIPCION ?>"      <?= ($orden == "Detalles")?"readonly":"" ?> size="8"></td></tr>
- 
  <tr><td>PRECIO </td> <td>
- <input type="text" name="PRECIO_ACTUAL" 	value="<?=$pro->PRECIO_ACTUAL ?>"    <?= ($orden == "Detalles")?"readonly":"" ?> size=10></td></tr>
+ <input type="text" name="PRECIO_ACTUAL" 	value="<?=$pro->PRECIO_ACTUAL ?>"    <?= ($orden == "Detalles")?"readonly":"" ?> size=20></td></tr>
  <tr><td>STOCK </td><td>
  <input type="number" 	name="STOCK_DISPONIBLE" value="<?=$pro->STOCK_DISPONIBLE ?>" <?= ($orden == "Detalles")?"readonly":"" ?> size=20></td></tr>
  </table>
